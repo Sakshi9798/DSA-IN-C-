@@ -1,33 +1,21 @@
-// #include <iostream>
-// using namespace std;
-
-// int main() {
-//     int age; // garbage value
-//     cout<<"enter your age : ";
-//     cin>>age;
-
-//     cout<<"your age is "<<age<<endl;
-//     return 0;
-// }
-
-// sum of a&b
 #include <iostream>
 using namespace std;
  int main() {
-    int a;
-    int b;
+    int eng;
+    int sci;
+    int math;
+    
+    cout<<"enter eng marks : ";
+    cin>>eng;
 
-     // input a
-     cout<<"enter a : ";
-     cin>>a;
+    cout<<"enter sci marks : ";
+    cin>>sci;
 
-     //input b
-     cout<<"enter b :";
-     cin>>b;
+    cout<<"enter math marks : ";
+    cin>>math;
 
-     //calculate sum
-     int sum = a + b;
-     cout<<" sum "<<sum<<endl;
-     return 0;
+    int avg = (eng + sci + math) / 3;
+    cout<<"avg marks = "<<avg<<endl;
+    return 0;
 
- }
+ } 
