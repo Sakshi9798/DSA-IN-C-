@@ -21,6 +21,8 @@ int main() {
         break;
         case 6 : cout << "saturday" << endl;
         break;
+        default : cout << "invalid day" << endl;
     }
+
     return 0;
 }
