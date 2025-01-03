@@ -15,16 +15,30 @@ int main() {
     cin >> op;
 
     //build calculator using if else
-    if(op == '+') {
-        cout << "a + b = " << (a + b) << endl;
-    } else if(op == '-') {
-        cout << "a - b = " << (a  - b) << endl;
-    } else if(op == '*') {
-        cout << "a * b = " << (a * b) << endl;
-    } else if(op == '/') {
-        cout << "a / b = " << (a / b) << endl;
-    } else{
-        cout << "invalid operator" << endl;
+    // if(op == '+') {
+    //     cout << "a + b = " << (a + b) << endl;
+    // } else if(op == '-') {
+    //     cout << "a - b = " << (a  - b) << endl;
+    // } else if(op == '*') {
+    //     cout << "a * b = " << (a * b) << endl;
+    // } else if(op == '/') {
+    //     cout << "a / b = " << (a / b) << endl;
+    // } else{
+    //     cout << "invalid operator" << endl;
+    // }
+
+    //using switch
+
+    switch (op) {
+        case '+' : cout << "a + b = " << (a + b) << endl;
+        break;
+        case '-' : cout << "a - b = " << (a - b) << endl;
+        break;
+        case '*' : cout << "a * b = " << (a * b) << endl;
+        break;
+        case '/' : cout << "a / b = " << (a / b) << endl;
+        break;
+        default : cout << "invalid" << endl;
     }
     return 0;
 
