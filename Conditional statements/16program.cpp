@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-    // loop
+    // for loop
     int num;
     for(num = 1 ; num <= 5; num++) {
         cout << num << " ";
