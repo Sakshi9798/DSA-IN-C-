@@ -8,8 +8,7 @@ int main() {
     cout << "enter age : ";
     cin >> age;
 
-    isAdult = age >= 18 ? true : false;
+    isAdult=(age>=18 || age<=18) ? true : false;
     cout << "isAdult" << endl;
-    
-    return 0;
+     
 }
