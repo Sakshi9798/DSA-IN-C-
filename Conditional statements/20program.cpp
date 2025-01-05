@@ -4,8 +4,8 @@ using namespace std;
 int main() {
    //while loop
 
-    int i = 1;
-    while(i <= 10) {
+    int i = 10;
+    while(i <= 30) {
         cout << i << " ";
         i++;
     }
