@@ -5,7 +5,7 @@ int main() {
 
     //pattern
     
-    for(int i=1; i<=4; i++) {
+    for(int i=1; i<=2; i++) {
         cout << "****" << endl;
     }
     return 0;
