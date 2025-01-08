@@ -1,24 +1,22 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 int main() {
-    // number is prime or not
-
-    int n = 9;
+    int n =2;
     bool isprime = true;
 
-    for(int i=2; i<=n-1; i++) {
-        if(n % i == 0) //i is a factor of n; i completely didides n; n is non-priime
+    for(int i=2; i<=sqrt(n); i++) {
+        if(n % i == 0) { // i is a factor of n;
         isprime = false;
         break;
+        }
     }
 
     if(isprime) {
-        cout << "number is prime";
+        cout << "number is prime" << endl;
     } else{
-        cout << "nuber is not prime" << endl;
-    
-    
+        cout << "number is not prime" << endl;
     }
     return 0;
 }
