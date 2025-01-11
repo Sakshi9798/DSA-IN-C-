@@ -2,26 +2,23 @@
 using namespace std;
 
 int main() {
-
     int n = 15;
 
+    for (int i = 2; i <= n; i++) {
+        bool isprime = true; // Assume the number is prime
 
-    for(int i=2; i<=n; i++) {
-        int curr = i; // current number to check for
-        bool isprime = true;
-
-        for(int j=2; j*j<=i; j++) {
-            if(curr % j == 0) {
+        for (int j = 2; j * j <= i; j++) {
+            if (i % j == 0) { // If divisible, it is not prime
                 isprime = false;
-
+                break; // Exit the loop early
             }
+        }
+
+        if (isprime) {
+            cout << i << " "; // Print the prime number
         }
     }
 
-    if(isprime) {
-        cout << curr << " ";
-    }
-cout << endl;
+    cout << endl;
     return 0;
-
 }

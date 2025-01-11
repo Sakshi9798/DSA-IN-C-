@@ -2,23 +2,19 @@
 using namespace std;
 
 int main() {
-    int n = 15;
+    int number;
 
-    for (int i = 2; i <= n; i++) {
-        bool isprime = true; // Assume the number is prime
+    // do-while loop
+    do {
+        cout << "Enter a positive number (or a negative number to quit): ";
+        cin >> number;
 
-        for (int j = 2; j * j <= i; j++) {
-            if (i % j == 0) { // If divisible, it is not prime
-                isprime = false;
-                break; // Exit the loop early
-            }
+        if (number >= 0) {
+            cout << "You entered: " << number << endl;
+        } else {
+            cout << "Negative number entered. Exiting..." << endl;
         }
+    } while (number >= 0); // Repeat as long as the number is non-negative
 
-        if (isprime) {
-            cout << i << " "; // Print the prime number
-        }
-    }
-
-    cout << endl;
     return 0;
 }
