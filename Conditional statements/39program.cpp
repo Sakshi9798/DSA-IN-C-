@@ -2,19 +2,18 @@
 using namespace std;
 
 int main() {
-    int number;
+    // print N fibonacci numbers
 
-    // do-while loop
-    do {
-        cout << "Enter a positive number (or a negative number to quit): ";
-        cin >> number;
+    int n = 19;
+    int first = 0, sec = 1;
+    cout << first << " " << sec << " ";
 
-        if (number >= 0) {
-            cout << "You entered: " << number << endl;
-        } else {
-            cout << "Negative number entered. Exiting..." << endl;
-        }
-    } while (number >= 0); // Repeat as long as the number is non-negative
-
+    for(int i=2; i<n; i++) {
+        int third = first + sec;
+        cout << third << " ";
+        first = sec;
+        sec = third;
+    }
+    cout << "\n";
     return 0;
 }
