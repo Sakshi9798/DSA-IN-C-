@@ -6,6 +6,6 @@ bool isEven(int n) {
 }
 
 int main() {
-    cout << isEven(90) << endl;
+    cout << isEven(19) << endl;
     return 0;
 }
